@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="admin.html">Dashboard</a>
+
+        <a href="index.html">Home</a>
+
+        <a href="login.html" onclick="logoutAdmin()">Logout</a>
+
+    </nav>
+
+    <h1>Manage Products</h1>
+
+
+    <!-- Add Product -->
+
+    <div class="form-container">
+
+        <h2>Add Product</h2>
+
+        <input type="text"
+               id="name"
+               placeholder="Product Name">
+
+        <input type="text"
+               id="description"
+               placeholder="Description">
+
+        <input type="number"
+               id="price"
+               placeholder="Price">
+
+        <input type="number"
+               id="quantity"
+               placeholder="Quantity">
+
+        <input type="number"
+               id="categoryId"
+               placeholder="Category ID">
+
+        <button onclick="addProduct()">
+            Add Product
+        </button>
+
+    </div>
+
+
+    <!-- Product List -->
+
+    <h2>All Products</h2>
+
+    <div id="products"></div>
+
+
+    <script src="js/admin-products.js"></script>
+
+</body>
+
+</html>

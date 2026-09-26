@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="admin.html">Dashboard</a>
+
+        <a href="login.html" onclick="logoutAdmin()">
+            Logout
+        </a>
+
+    </nav>
+
+
+    <h1>Admin Dashboard</h1>
+
+
+    <div id="adminInfo"></div>
+
+
+    <!-- Product Management -->
+
+    <div class="product-card">
+
+        <h2>Product Management</h2>
+
+        <p>
+            Add, view, update and delete products.
+        </p>
+
+        <button onclick="openProducts()">
+            Manage Products
+        </button>
+
+    </div>
+
+
+    <!-- Category Management -->
+
+    <div class="product-card">
+
+        <h2>Category Management</h2>
+
+        <p>
+            Add, view, update and delete categories.
+        </p>
+
+        <button onclick="openCategories()">
+            Manage Categories
+        </button>
+
+    </div>
+
+
+    <!-- User Management -->
+
+    <div class="product-card">
+
+        <h2>User Management</h2>
+
+        <p>
+            View and manage users.
+        </p>
+
+        <button onclick="openUsers()">
+            Manage Users
+        </button>
+
+    </div>
+
+
+    <!-- Order Management -->
+
+    <div class="product-card">
+
+        <h2>Order Management</h2>
+
+        <p>
+            View orders and update order status.
+        </p>
+
+        <button onclick="openOrders()">
+            Manage Orders
+        </button>
+
+    </div>
+
+
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

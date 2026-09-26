@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Categories</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="admin.html">Dashboard</a>
+
+        <a href="index.html">Home</a>
+
+        <a href="login.html" onclick="logoutAdmin()">Logout</a>
+
+    </nav>
+
+    <h1>Manage Categories</h1>
+
+
+    <div class="form-container">
+
+        <h2>Add Category</h2>
+
+        <input type="text"
+               id="categoryName"
+               placeholder="Category Name">
+
+        <button onclick="addCategory()">
+            Add Category
+        </button>
+
+    </div>
+
+
+    <h2>All Categories</h2>
+
+    <div id="categories"></div>
+
+
+    <script src="js/admin-categories.js"></script>
+
+</body>
+
+</html>
